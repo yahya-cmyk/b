@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frei-Day Projekt</title>
+<link rel="stylesheet" href="Hauptseite.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="icon" href="image9.png">
+</head>
+<body>
+<nav class="topnav">
+    <a class="active" href="//www.paypal.com/donate/?hosted_button_id=MF3ZFXBYXFM4C">Spenden</a>
+    <a href="#contact">Kontakt</a>
+    <a href="#services">Über Uns</a>
+</nav>
+<section class="half-and-half" id="home">
+    <div class="image" style="background-image: url('image1.jpg');"></div>
+    <div class="text">
+        <h2>Helfen Sie Kindern in Armut</h2>
+        <p><h4>Millionen von Kindern weltweit leiden unter den verheerenden Auswirkungen von Armut. Diese Kinder haben oft keinen Zugang zu ausreichender Nahrung, Bildung und medizinischer Versorgung. Ohne Unterstützung fehlt ihnen die Grundlage für eine gesunde und erfolgreiche Zukunft.</h4></p>
+        <p><h4>Ihre Spende kann das ändern. Mit Ihrer Hilfe können wir lebenswichtige Ressourcen bereitstellen, Schulen unterstützen und medizinische Versorgung ermöglichen. Jede Spende, egal wie klein, trägt dazu bei, das Leben dieser Kinder zu verbessern und ihnen eine Chance auf eine bessere Zukunft zu geben.</h4></p>
+        <p><h4>Helfen Sie mit und spenden Sie jetzt. Gemeinsam können wir Kinderarmut bekämpfen und Hoffnung schenken.</h4></p>
+    </div>
+</section>
+<section class="half-and-half reverse" id="about">
+    <div class="image" style="background-image: url('image2.jpg');"></div>
+    <div class="text">
+        <h2>Können Sie Uns Vertrauen?</h2>
+        <p><h4>Wir nutzen PayPal. Das Spenden über PayPal bietet eine sichere, einfache und transparente Möglichkeit, Gutes zu tun. Dank der hohen Sicherheitsstandards, der Benutzerfreundlichkeit und der globalen Reichweite können Sie sicher sein, dass Ihre Spende den richtigen Empfänger erreicht und effektiv genutzt wird. Vertrauen Sie auf PayPal, um Ihre Spenden sicher und zuverlässig zu verwalten.<a href="https://www.paypal.com/de/digital-wallet/send-receive-money/giving">Mehr über Paypal spende.</a>
+        </h4></p>
+        <p><h4>Deutschland Rundet Auf Gemeinnützige Stiftungs-GmbH ist eine vertrauenswürdige Organisation, die durch Transparenz, regelmäßige Prüfung und effiziente Mittelverwendung überzeugt. Durch die Unterstützung von renommierten Partnern und die klar nachweisbare soziale Wirkung der Projekte können Spender sicher sein, dass ihre Aufrundungen tatsächlich helfen, das Leben von Menschen in Not zu verbessern.
+            <a href="https://deutschland-rundet-auf.de/de/">Mehr Über Deutschland Rundet Auf Gemeinnützige Stiftungs-GmbH.</a>
+        </h4></p>
+    </div>
+</section>
+<section class="half-and-half" id="services">
+    <div class="image" style="background-image: url('image3.png');"></div>
+    <div class="text">
+        <h2>Über Uns</h2>
+        <p><h4> Wir sind Schüler von Schulzentrum bucheim, Diese Website ist eine projekt von Frei-Day. Wir gehen zum 8. Klasse, wir wollten diese seite machen damit wir den Armen Leuten helfen können und spenden für sie. Mithilfe dieses Websites können sie ein besseres Leben haben.</h4></p>
+    </div>
+</section>
+<section class="contact-section" id="contact">
+    <h2>Kontakt</h2>
+    <p>Email: info-wh-rs@sz-buchheim.de</p>
+    <p>Adresse: Arnsbergerstraße 11,
+         51065 Köln, Deutschland</p>
+</section>
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            // Check if the href attribute starts with '#'
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
